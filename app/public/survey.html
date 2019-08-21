@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>FriendFinder</title>
+</head>
+
+<body style="background-color: beige;">
+    <div style="display:flex; justify-content: space-around; margin-top: 80px; ">
+        <div class="jumbotron" id="friendJumbo" style="text-align: center; background-color: rgb(241, 226, 139); border-style: solid; border-width: 2px; border-color: black; width: 900px">
+            <h1 class="display-4" style="font-weight: bold">&#9829;FriendFinder&#9829;</h1>
+            <hr class="my-4">
+
+            <h2 style="font-weight: bold">About You</h2>
+            <br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="yourName" aria-describedby="emailHelp" placeholder="Your Name - Required">
+                <br>
+                <input type="text" class="form-control" id="yourPhoto" aria-describedby="emailHelp" placeholder="Photo of Yourself - Required">
+            </div>
+
+            <hr class="my-4">
+
+            <h2>Question 1</h2>
+            <h4>You think breakfast is the best and only meal that should exist.</h4>
+
+            <select class="form-control" id="question1">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+
+            <hr class="my-4">
+
+            <h2>Question 2</h2>
+            <h4>You prefer to be in a park than a library.</h4>
+
+            <select class="form-control" id="question2">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 3</h2>
+            <h4>Men should not wear sandals.</h4>
+
+
+            <select class="form-control" id="question3">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 4</h2>
+            <h4>You think Galentine's Day is better than Valentine's Day.</h4>
+
+            <select class="form-control" id="question4">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 5</h2>
+            <h4>You think the government is a huge waste of money.</h4>
+
+            <select class="form-control" id="question5">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+
+            <hr class="my-4">
+
+            <h2>Question 6</h2>
+            <h4>You think there is no better ring bearer than a dog.</h4>
+
+            <select class="form-control" id="question6">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 7</h2>
+            <h4>You think vegan bacon shouldn't exist.</h4>
+
+            <select class="form-control" id="question7">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 8</h2>
+            <h4>You manage to stay positive when faced with challenges.</h4>
+            <select class="form-control" id="question8">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 9</h2>
+            <h4>You think musicians are hot.</h4>
+            <select class="form-control" id="question9">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <hr class="my-4">
+
+            <h2>Question 10</h2>
+            <h4>You think Lil Sebastian is too pure for this world.</h4>
+            <select class="form-control" id="question10">
+                <option>5 - Very True</option>
+                <option>4 - Somewhat True</option>
+                <option>3 - Neither Or</option>
+                <option>2 - Somewhat Flase</option>
+                <option>1 - Very False</option>
+            </select>
+
+            <br>
+            <hr class="my-4">
+            <br>
+            <div style="display: flex; justify-content: center;" ">
+                    <button type= " button " class="btn btn-primary " id="submitButton " data-toggle="modal "
+                data-target="#exampleModal " style="display: flex; justify-content: center; ">
+                Show Me My New Best Friend!
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade " id="exampleModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="newFriendName "></h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <!-- <h1 id="usersPhoto "></h1> -->
+                    <img alt="Your Photo Here " id="usersPhoto " height="200px " width="250px " src=" ">
+                    <img alt="Your New Friend 's Photo Here" id="newFriendPhoto" height="200px" width="250px">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">YAY!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+
+       $("#submitButton").on("click", function (event) {
+        event.preventDefault();
+      
+       
+            var newUser = {
+                name: $("#yourName").val(),
+                photo: $("#yourPhoto").val(),
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+            }
+
+
+           // Will get the new friend data and show on page
+            $.post("/api/friends", newUser, function (data) {
+                console.log(data);
+                $("#newFriendName").text(data.name);
+                $("#newFriendPhoto").attr("src", data.photo);
+                $("#exampleModal").modal("show");
+            });
+        });
+ 
+        
+    </script>
+
+
+</body>
+
+</html>
