@@ -3,7 +3,7 @@ var path = require("path");
 var colors = require("colors");
 
 var app = express();
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 5000
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));

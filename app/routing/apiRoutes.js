@@ -12,11 +12,11 @@ module.exports = function(app) {
         //this returns users name, photo link, and scores.
 
         var theUserScores = theUser.scores;
-        // console.log("friends[i].scores[j]", friends[i].scores[j]);
+
         //returns the users results
-        var userResults = theUserScores.map(function(x) {
-            return parseInt(x, 10);
-        });
+        // var userResults = theUserScores.map(function(x) {
+        //     return parseInt(x, 10);
+        // });
 
         let differenceOfScores = 0;
         let differenceArray = [];

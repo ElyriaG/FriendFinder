@@ -159,8 +159,8 @@
             <hr class="my-4">
             <br>
             <div style="display: flex; justify-content: center;" ">
-                    <button type= " button " class="btn btn-primary " id="submitButton " data-toggle="modal "
-                data-target="#exampleModal " style="display: flex; justify-content: center; ">
+                    <button type= "button" class="btn btn-primary" id="submitButton" data-toggle="modal"
+                data-target="#exampleModal" style="display: flex; justify-content: center;">
                 Show Me My New Best Friend!
                 </button>
             </div>
@@ -168,19 +168,18 @@
     </div>
 
 
-    <div class="modal fade " id="exampleModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel ">
-        <div class="modal-dialog " role="document ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title " id="newFriendName "></h5>
-                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
-                        <span aria-hidden="true ">&times;</span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newFriendName" style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body ">
-                    <!-- <h1 id="usersPhoto "></h1> -->
-                    <img alt="Your Photo Here " id="usersPhoto " height="200px " width="250px " src=" ">
-                    <img alt="Your New Friend 's Photo Here" id="newFriendPhoto" height="200px" width="250px">
+                <div class="modal-body" style="display: flex; justify-content: center;">
+                    <img alt="Your Photo Here" id="usersPhoto" height="200px" width="250px" src="">
+                    <img alt="Your New Friend's Photo Here" id="newFriendPhoto" height="200px" width="250px">
 
                 </div>
                 <div class="modal-footer">
@@ -200,12 +199,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
 
+
+    <script>
        $("#submitButton").on("click", function (event) {
         event.preventDefault();
       
-       
             var newUser = {
                 name: $("#yourName").val(),
                 photo: $("#yourPhoto").val(),
@@ -221,19 +220,18 @@
                     $("#question9").val(),
                     $("#question10").val()
                 ]
-            }
+            };
 
 
            // Will get the new friend data and show on page
             $.post("/api/friends", newUser, function (data) {
                 console.log(data);
                 $("#newFriendName").text(data.name);
+                $("#usersPhoto").attr("src", newUser.photo);
                 $("#newFriendPhoto").attr("src", data.photo);
                 $("#exampleModal").modal("show");
             });
         });
- 
-        
     </script>
 
 
