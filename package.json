@@ -21,7 +21,7 @@
   "dependencies": {
     "@primer/octicons": "^9.1.1",
     "colors": "^1.3.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7"
   }
 }
